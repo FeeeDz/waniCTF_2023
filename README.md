@@ -25,7 +25,7 @@ we can see that NX is disabled and that means we can go with shellcode injection
 
 ## Canaleak
 
-the aim of this challenge is to leak the stack canary through format string vulnerability and then jump to the win function.
+the aim of this challenge is to leak the stack canary through format string vulnerability and then jump to the win function that will open /bin/sh.
 
 ```C
 while (strcmp(nope, "YES")) {
